@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "radlist-outside"
+    }
+  },
+  "defaultProject": "radlist-outside",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

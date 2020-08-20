@@ -1,0 +1,36 @@
+<!-- <GridLayout>
+
+  <page-router-outlet></page-router-outlet>
+
+
+  <StackLayout verticalAlignment="center" (loaded)="loadedSuccess($event)" opacity="0">
+    <Label text="Sweet!" textWrap="true" class="h2 text-center"></Label>
+    <Label text="You should try adding some routes." class="h3 text-center"></Label>
+  </StackLayout>
+  <StackLayout verticalAlignment="center" (loaded)="loadedContainer($event)">
+    <Label text="Congrats! It works" textWrap="true" class="h2 text-center"></Label>
+    <Button text="Keep Tapping for a Surprise!" textWrap="true" class="-primary" (tap)="tapMe()"></Button>
+    <Label [text]="'You have ' + cnt + ' taps left.'" class="h3 text-center"></Label>
+  </StackLayout>
+  
+  
+</GridLayout> -->
+
+<StackLayout>
+  <Button text="Tap to open drawer" textWrap="true" class="-primary" (tap)="tapMe()"></Button>
+  <RadSideDrawer drawerLocation="Top" tkExampleTitle tkToggleNavButton>
+    <GridLayout tkDrawerContent rows="auto" columns="*">
+      <StackLayout>
+        <Label text="Content drawer" class="h2 text-center"></Label>
+      </StackLayout>
+    </GridLayout>
+    <StackLayout tkMainContent>
+      <GridLayout rows="*" columns="*">
+        <StackLayout row="0" col="0">
+          <Label text="Hello nativescript team" class="h2 text-center"></Label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+
+  </RadSideDrawer>
+</StackLayout>
